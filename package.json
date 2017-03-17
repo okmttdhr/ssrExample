@@ -17,7 +17,8 @@
     "tsc": "npm run clean && $(npm bin)/tsc"
   },
   "author": "Barbar Startup Factory <hey@barbar.com.tr>",
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Altay Aydemir",
       "email": "altay.aydemir@gmail.com",
       "url": "http://altayaydemir.com/"
@@ -139,6 +140,7 @@
     "webpack-manifest-plugin": "^1.1.0"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "chalk": "^1.1.3",
     "compression": "^1.6.2",
     "es6-promise": "^4.0.5",

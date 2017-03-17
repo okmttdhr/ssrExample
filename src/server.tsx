@@ -1,3 +1,4 @@
+require('babel-polyfill');
 const appConfig = require('../config/main');
 
 import * as e6p from 'es6-promise';
@@ -6,14 +7,13 @@ import 'isomorphic-fetch';
 
 import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-
 import { Provider } from 'react-redux';
 import { createMemoryHistory, match } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect, loadOnServer } from 'redux-connect';
+
 import { configureStore } from './app/redux/store';
 import routes from './app/routes';
-
 import { Html } from './app/containers';
 const manifest = require('../build/manifest.json');
 
